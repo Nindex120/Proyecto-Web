@@ -6,36 +6,41 @@
     <meta name="description" content="Tienda de productos impresos en 3D.">
     <meta name="author" content="Rubén Pedrazo, Jairo Carnicero, David Rodríguez">
     <title>Impresión 3D | Inicio</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <header>
-      <a href="#inicio">3D Shop</a>
-      <nav aria-label="Navegación principal">
+    <header class="site-header">
+      <a href="#inicio" class="brand">3D Shop</a>
+      <nav class="main-nav" aria-label="Navegación principal">
         <a href="Productos.html">Productos</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
-    <main>
-      <section id="inicio">
-        <p>Diseño e impresión 3D</p>
-        <h1>Ideas que toman forma</h1>
-        <p>Diseñamos objetos útiles y originales, impresos capa a capa.</p>
-        <a href="Productos.html">Productos...</a>
-        <p><img src="frontend/img/Portada.png" alt="Portada de la web"></img></p>
+    <main class="container">
+      <section id="inicio" class="hero">
+        <div class="hero-copy">
+          <p class="tag">Diseño e impresión 3D</p>
+          <h1>Ideas que toman forma</h1>
+          <p>Diseñamos objetos útiles y originales, impresos capa a capa.</p>
+          <a href="Productos.html" class="button primary">Productos...</a>
+        </div>
+        <div class="hero-image">
+          <img src="frontend/img/Portada.png" alt="Portada de la web">
+        </div>
       </section>
 
-      <section id="nosotros">
+      <section id="nosotros" class="info-section">
         <h2>¿Quiénes somos?</h2>
         <p>Somos un equipo de estudiantes y esta es nuestra tienda web de impresión 3D.</p>
       </section>
 
-      <section id="contacto">
+      <section id="contacto" class="info-section contact-section">
         <h2>Contacto</h2>
         <p>¿Tienes una idea o una pregunta? Escríbenos.</p>
-        <form action="mailto:info@algo.com" method="post" enctype="text/plain">
+        <form action="mailto:info@algo.com" method="post" enctype="text/plain" class="contact-form">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required>
 
@@ -45,12 +50,12 @@
           <label for="mensaje">Mensaje:</label>
           <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-          <button type="submit">Enviar</button>
+          <button type="submit" class="button">Enviar</button>
         </form>
       </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>Proyecto de Rubén Pedrazo, Jairo Carnicero y David Rodríguez</p>
     </footer>
   </body>
