@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8">
-    <meta name="autor" content="Rubén Pedrazo, Jairo Carnicero, David Rodríguez">
-    <meta lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tienda de productos impresos en 3D.">
+    <meta name="author" content="Rubén Pedrazo, Jairo Carnicero, David Rodríguez">
+    <title>Impresión 3D | Inicio</title>
   </head>
-  
+
   <body>
-    <h1>Impresión 3D</h1>
+    <header>
+      <a href="#inicio">[Nombre de la tienda]</a>
+      <nav aria-label="Navegación principal">
+        <a href="productos.html">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <p>Diseño e impresión 3D</p>
+        <h1>Ideas que toman forma</h1>
+        <p>Diseñamos objetos útiles y originales, impresos capa a capa.</p>
+        <a href="productos.html">Ver productos...</a>
+        <p><img src="frontend/img/Portada.png" alt="Portada de la web"></img></p>
+      </section>
+
+      <section id="nosotros">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos un equipo de estudiantes y esta es nuestra tienda web de impresión 3D.</p>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes una idea o una pregunta? Escríbenos.</p>
+        <form action="mailto:info@algo.com" method="post" enctype="text/plain">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Proyecto de Rubén Pedrazo, Jairo Carnicero y David Rodríguez</p>
+    </footer>
   </body>
 </html>
