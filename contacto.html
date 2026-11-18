@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contacta con el equipo de 3D Shop.">
+    <title>3D Shop | Contacto</title>
+    <link rel="stylesheet" href="frontend/styles/contacto.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="brand">3D Shop</a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="Filamentos.html">Filamentos</a>
+        <a href="Impresoras3D.html">Impresoras 3D</a>
+        <a href="nosotros.html">Nosotros</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="info-section contact-section">
+        <h1>Contacto</h1>
+        <p>¿Tienes una idea o una pregunta? Envíanos un mensaje.</p>
+        <form action="mailto:info@algo.com" method="post" enctype="text/plain" class="contact-form">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit" class="button">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Proyecto de Rubén Pedrazo, Jairo Carnicero y David Rodríguez</p>
+    </footer>
+  </body>
+</html>

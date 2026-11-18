@@ -1,0 +1,104 @@
+:root {
+  --bg: #f4f4f4;
+  --surface: #ffffff;
+  --text: #302b25;
+  --muted: #555555;
+  --accent: #235789;
+  --border: #ddd2bf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: var(--surface);
+  border-bottom: 3px solid var(--accent);
+}
+
+.brand {
+  color: var(--accent);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  gap: 22px;
+  font-family: Arial, sans-serif;
+}
+
+.main-nav a {
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+}
+
+.container {
+  width: min(90%, 850px);
+  flex: 1;
+  margin: 55px auto;
+}
+
+.info-section {
+  padding: 38px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 12px 12px 0 #555555;
+}
+
+.info-section h1 {
+  margin-top: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 2.4rem;
+}
+
+.info-section p {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.site-footer {
+  padding: 20px;
+  background: #302b25;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info-section {
+    padding: 25px;
+  }
+}

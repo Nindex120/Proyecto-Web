@@ -6,16 +6,17 @@
     <meta name="description" content="Tienda de productos impresos en 3D.">
     <meta name="author" content="Rubén Pedrazo, Jairo Carnicero, David Rodríguez">
     <title>Impresión 3D | Inicio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="frontend/styles/index.css">
   </head>
 
   <body>
     <header class="site-header">
       <a href="#inicio" class="brand">3D Shop</a>
       <nav class="main-nav" aria-label="Navegación principal">
-        <a href="Productos.html">Productos</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
+        <a href="Filamentos.html">Filamentos</a>
+        <a href="Impresoras3D.html">Impresoras 3D</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </header>
 
@@ -25,33 +26,19 @@
           <p class="tag">Diseño e impresión 3D</p>
           <h1>Ideas que toman forma</h1>
           <p>Diseñamos objetos útiles y originales, impresos capa a capa.</p>
-          <a href="Productos.html" class="button primary">Productos...</a>
+          <a href="#catalogos" class="button primary">Productos...</a>
         </div>
         <div class="hero-image">
           <img src="frontend/img/Portada.png" alt="Portada de la web">
         </div>
       </section>
 
-      <section id="nosotros" class="info-section">
-        <h2>¿Quiénes somos?</h2>
-        <p>Somos un equipo de estudiantes y esta es nuestra tienda web de impresión 3D.</p>
-      </section>
-
-      <section id="contacto" class="info-section contact-section">
-        <h2>Contacto</h2>
-        <p>¿Tienes una idea o una pregunta? Escríbenos.</p>
-        <form action="mailto:info@algo.com" method="post" enctype="text/plain" class="contact-form">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-          <button type="submit" class="button">Enviar</button>
-        </form>
+      <section id="catalogos" class="info-section contact-section">
+        <h2>Catalogo de Productos</h2>
+        <p>Nuestros catalogos disponibles</p>
+        <br>
+        <button type="button" class="button"><a href="Impresoras3D.html">Catalogo de Impresoras 3D</a></button>
+        <button type="button" class="button"><a href="Filamentos.html">Catalogo de Filamentos</a></button>
       </section>
     </main>
 

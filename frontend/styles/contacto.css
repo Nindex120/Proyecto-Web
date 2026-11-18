@@ -1,0 +1,146 @@
+:root {
+  --bg: #f4f4f4;
+  --surface: #ffffff;
+  --text: #222222;
+  --muted: #555555;
+  --accent: #235789;
+  --accent-hover: #1e4366;
+  --border: #cccccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8%;
+  background: var(--surface);
+  border-bottom: 2px solid var(--accent);
+}
+
+.brand {
+  color: var(--accent);
+  font-size: 1.35rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  gap: 22px;
+}
+
+.main-nav a {
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+}
+
+.container {
+  width: min(90%, 700px);
+  flex: 1;
+  margin: 45px auto;
+}
+
+.contact-section {
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(31, 41, 64, 0.08);
+}
+
+.contact-section h1 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.contact-section p {
+  color: var(--muted);
+}
+
+.contact-form {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.contact-form label {
+  margin-top: 7px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fbfcff;
+  color: var(--text);
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(79, 70, 165, 0.2);
+  border-color: var(--accent);
+}
+
+.button {
+  width: fit-content;
+  margin-top: 12px;
+  padding: 11px 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: var(--accent-hover);
+}
+
+.site-footer {
+  margin-top: auto;
+  padding: 20px;
+  background: #20294a;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-section {
+    padding: 24px 18px;
+  }
+}
