@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: Georgia, serif;
+  font-family: Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
